@@ -1,0 +1,27 @@
+Contributions by the Project Member:
+1)Prakash Parajuli (USC ID:7437884710)
+- Responsible for formulating the solution and coding the solution.
+- Responsible for generating graphs.
+
+2) Prasoon Gautam(USC ID: 572205423)
+- Responsible for coding the solution.
+- Responsible for carrying out the test cases and generating the test-cases.
+
+Difference in the time graph of the basic and effecient versions:
+1) The basic version uses the concept of the dynamic programming for finding the optimal alignment
+   of the two strings. Here, since we are finding each of the possible combination in the matrix,
+   run-time of this algorithm is O(mn) where m and n are the length of the first and second string.
+   Likewise, in the second effecient, we are using divide and conquer plus the dynamic approach. Since
+   we are using the divide and conquer for each of the subproblems, the time-complexity increases for
+   space effecient algorithm as we are performing dynamic programming for each of the subproblem. The
+   new time-complexity becomes O(2mn) which is equivalent to O(mn). Hence, for reducing the space, we 
+   can consider this much of time increase.
+
+2) Space effecient version of the sequence alignment:
+   Here, we are dividing the either first or string into half and finding the optimal cost between
+   this point and doing the same thing for the second half of either first or second. Since, we are
+   dividing the string and only calculating the sequence alignment for half of the input size of one
+   string, we are reducing almost half space from the previous version, which only uses the dynamic 
+   approach.In space effecient version since we only work on one recursive call at a time, the time
+   complexity becomes O(m+n). Although there was increase in the time complexity, we were able to
+   reduce the space complexity from O(mn) to O(m+n).
